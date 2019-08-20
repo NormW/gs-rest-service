@@ -1,7 +1,10 @@
 package hello;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Greeting {
 
+    @JsonProperty("user_id")
     private final long id;
     private final String content;
 
